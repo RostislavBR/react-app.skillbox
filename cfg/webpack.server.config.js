@@ -12,7 +12,7 @@ module.exports = {
         filename: 'server.js',
     },
     resolve: {
-        extensions: ['.jsx', '.js', '.json'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
     },
     externals: [nodeExternals()],
     module: {
@@ -31,7 +31,7 @@ module.exports = {
                                 mode: 'local',
                                 localIdentName: '[name]__[local]--[hash:base64:5]',
                             },
-                            onlyLocals:true
+                            onlyLocals: true
                         }
                     },
                 ],
