@@ -1,12 +1,9 @@
 //1
-function concatString(method: 'add', left: string, right: string): string {
-    switch (method) {
-        case 'add':
-            return left.concat(right);
-    }
+function concatString(left: string, right: string): string {
+    return left.concat(right);
 }
 
-const str1 = concatString('add', 'Hello ', 'World');
+const str1 = concatString( 'Hello ', 'World');
 
 //2
 interface IMyHomeTask {
@@ -15,8 +12,6 @@ interface IMyHomeTask {
     withData: [
         {
             howIDoIt: string,
-        },
-        {
             someArray: [string, string, number],
         },
     ],
@@ -28,8 +23,6 @@ const MyHomeTask: IMyHomeTask = {
     withData: [
         {
             howIDoIt: "I Do It Wel",
-        },
-        {
             someArray: ["string one", "string two", 42],
         },
     ]
@@ -57,34 +50,12 @@ interface IHomeTask {
     }
 }
 
-const myHomeTask: IHomeTask = {
-    data: 'aasdas',
-    numbericData: 11021999,
-    date: new Date('11-02-1999'),
+type MyPartial<T> = {
+    [N in keyof T]?: MyPartial<T[N]>
+}
+
+const homeTask: MyPartial<IHomeTask> = {
     externalData: {
-        basic: 123,
-        value: 'lose',
+        value: 'win'
     }
 }
-
-type TMyHomeTask = typeof myHomeTask;
-type TObjKeys = keyof TMyHomeTask;
-type TCommitType = TMyHomeTask['externalData']
-
-//Добавляем Readonly
-type TPartial<T> = {
-    readonly [N in keyof T]: T[N] extends object ? TPartial<T[N]> : T[N]
-}
-
-//Проверяем работает ли Readonly
-const typedTPartialObj: TPartial<TMyHomeTask> = myHomeTask;
-// typedTPartialObj.externalData.value = "win"; тут будет ошибка и мы удостоверились что Readonly работает
-
-//Создаем тип который уберет Readonly
-type TSomeType = TPartial<TMyHomeTask>;
-type RemoveReadonly<T> = T extends TPartial<infer E> ? E : T;
-
-//Проверяем можем ли мы изменить значение ключа
-const typeTTest: RemoveReadonly<TMyHomeTask> = myHomeTask;
-typeTTest.externalData.value = "win";
-
