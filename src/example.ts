@@ -3,18 +3,18 @@ function concatString(left: string, right: string): string {
     return left.concat(right);
 }
 
-const str1 = concatString( 'Hello ', 'World');
+const str1 = concatString('Hello ', 'World');
 
 //2
 interface IMyHomeTask {
     howIDoIt: string,
-    someArray: [string, string, number],
-    withData: [
-        {
-            howIDoIt: string,
-            someArray: [string, string, number],
-        },
-    ],
+    someArray: (string | number)[],
+    withData: WithDataType[],
+}
+
+interface WithDataType {
+    howIDoIt: string,
+    someArray: (string | number)[],
 }
 
 const MyHomeTask: IMyHomeTask = {
@@ -24,6 +24,14 @@ const MyHomeTask: IMyHomeTask = {
         {
             howIDoIt: "I Do It Wel",
             someArray: ["string one", "string two", 42],
+        },
+        {
+            howIDoIt: "I Do It Wel",
+            someArray: ["string one"],
+        },
+        {
+            howIDoIt: "I Do It Wel",
+            someArray: ["string one", 42],
         },
     ]
 }
