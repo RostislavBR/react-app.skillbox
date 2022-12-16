@@ -41,7 +41,7 @@ module.exports = {
             {
                 test: GLOBAL_CSS_REGEXP,
                 use: ['css-loader'],
-            }
+            },
         ],
     },
     optimization: {
