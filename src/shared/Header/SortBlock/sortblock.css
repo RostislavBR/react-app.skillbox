@@ -34,9 +34,6 @@
     right: 0;
     padding: 5px;
     background-color: #333333;
-    /*background-image: url("../../../images/eyes.svg");*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: center;*/
 }
 
 .sort-block-item:after {
@@ -46,9 +43,6 @@
     left: 0;
     padding: 5px;
     background-color: #333333;
-    /*background-image: url("../../../images/arrow.svg");*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: center;*/
 }
 
 .btn {

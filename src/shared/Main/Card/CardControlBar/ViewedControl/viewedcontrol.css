@@ -1,0 +1,24 @@
+.viewed-wrapper {
+    display: flex;
+}
+
+.btn-up,
+.btn-down {
+    position: relative;
+    border: none;
+    background: none;
+}
+
+.viewed-counter {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    color: var(--greyC4);
+    padding: 5px 0 0 0;
+    margin: 0 4px;
+}
+
+.arrow-down {
+    transform: rotate(180deg);
+}
