@@ -1,0 +1,7 @@
+.card-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    margin: 0 0 13px 0;
+}

@@ -1,0 +1,6 @@
+.card-image-wrapper {
+    width: 100%;
+    min-height: 178px;
+    background-color: var(--greyD9);
+    margin: 0 0 10px 0;
+}

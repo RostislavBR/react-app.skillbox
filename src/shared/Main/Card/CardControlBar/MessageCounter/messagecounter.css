@@ -1,0 +1,17 @@
+.message-counter-wrapper {
+    position: relative;
+    display: flex;
+    padding: 3px 0 0 0;
+}
+
+.message-svg {
+    margin: 0 5.84px 0 0;
+}
+
+.message-counter {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    color: var(--greyC4);
+}
