@@ -11,12 +11,13 @@
 }
 
 .logo-wrapper {
-    display: block;
+    display: flex;
+    margin: 0 14px 0 0;
+}
+
+.logo-svg {
     width: 30px;
     height: 30px;
-    margin: 0 14px 0 0;
-    border-radius: 50%;
-    background-color: var(--black);
 }
 
 .search-string-wrapper {
@@ -33,14 +34,30 @@
     background-color: var(--greyF4);
     border: none;
     border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+}
+
+.search-string::placeholder {
+    color: var(--greyC4);
 }
 
 .notifications-wrapper {
+    display: flex;
+}
+
+.notifications-wrapper:before {
+    display: flex;
+    content: '4';
+    justify-content: center;
+    align-items: center;
     width: 12.77px;
-    /*height: 10.21px;*/
-    /*padding: 0 0 0 4.47px;*/
-    padding: 10px;
-    background-color: gray;
+    height: 12.77px;
+    font-size: 9px;
+    color: var(--white);
+    background: var(--orange);
+    border-radius: 50%;
+    margin: 0 7.57px 0 0;
 }
 
 @media all and (min-width: 1024px) {

@@ -3,6 +3,6 @@ import styles from './threadtitle.css';
 
 export function ThreadTitle() {
     return (
-        <h1 className={styles.threadTitle}>Личный кабинет</h1>
+        <h1 className={styles['thread-title']}>Личный кабинет</h1>
     );
 }
