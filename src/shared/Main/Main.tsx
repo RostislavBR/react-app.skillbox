@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './main.css';
-import {Card} from "./Card";
+import {CardList} from "./CardList";
 
 export function Main() {
     return (
         <main>
-            <Card/>
+            <CardList/>
         </main>
     );
 }
