@@ -1,0 +1,37 @@
+.viewed-wrapper {
+    display: flex;
+    flex: 1 1;
+    padding: 0 0 0 20px;
+}
+
+.btn-up,
+.btn-down {
+    position: relative;
+    border: none;
+    background: none;
+}
+
+.btn-up {
+    margin: 0 6px 0 0;
+}
+
+.viewed-counter {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    color: var(--greyC4);
+    margin: 0 6px 0 0;
+}
+
+.arrow-down {
+    transform: rotate(180deg);
+}
+
+.viewed-wrapper > button.btn-up:hover > svg > path {
+    fill: var(--green);
+}
+
+.viewed-wrapper > button.btn-down:hover > svg > path {
+    fill: var(--orange);
+}

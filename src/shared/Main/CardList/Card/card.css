@@ -1,0 +1,6 @@
+.card-wrapper {
+    position: relative;
+    padding: 22px 0 8px 0;
+    background-color: var(--white);
+    border-radius: 7px;
+}
