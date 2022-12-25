@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "884c78aa5625f316a310";
+/******/ 	var hotCurrentHash = "54089f45a856d91e9434";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1014,7 +1014,7 @@ eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../.
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".cardlist__card-list--8yBm9 {\\r\\n    display: flex;\\r\\n    flex-direction: column;\\r\\n}\", \"\"]);\n// Exports\nexports.locals = {\n\t\"card-list\": \"cardlist__card-list--8yBm9\"\n};\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/shared/Main/CardList/cardlist.css?./node_modules/css-loader/dist/cjs.js??ref--5-1");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".cardlist__card-list--8yBm9 {\\r\\n    display: flex;\\r\\n    flex-direction: column;\\r\\n}\\r\\n\\r\\n@media all and (min-width: 1024px) {\\r\\n    .cardlist__card-list--8yBm9 {\\r\\n        background: var(--white);\\r\\n    }\\r\\n}\", \"\"]);\n// Exports\nexports.locals = {\n\t\"card-list\": \"cardlist__card-list--8yBm9\"\n};\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/shared/Main/CardList/cardlist.css?./node_modules/css-loader/dist/cjs.js??ref--5-1");
 
 /***/ }),
 

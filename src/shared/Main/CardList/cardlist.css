@@ -2,3 +2,9 @@
     display: flex;
     flex-direction: column;
 }
+
+@media all and (min-width: 1024px) {
+    .card-list {
+        background: var(--white);
+    }
+}
