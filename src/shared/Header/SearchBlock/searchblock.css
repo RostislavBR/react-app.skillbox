@@ -15,6 +15,15 @@
     margin: 0 14px 0 0;
 }
 
+.person-name {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--orange);
+}
+
 .logo-svg {
     width: 30px;
     height: 30px;
@@ -26,8 +35,9 @@
 
 .search-string {
     width: 192px;
-    padding: 8px 0 8px 16px;
-    margin: 0 16px 0 0;
+    height: 30px;
+    padding: 0 0 0 31px;
+    margin: 0 14px 0 0;
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
@@ -57,27 +67,65 @@
     color: var(--white);
     background: var(--orange);
     border-radius: 50%;
-    margin: 0 7.57px 0 0;
+    margin: 0 4.57px 0 0;
 }
 
 @media all and (min-width: 1024px) {
     .search-block {
+        flex-grow: 1;
+        justify-content: end;
         padding: 0;
-        margin: 0 0 0 auto;
+        margin: 0;
         background-color: transparent;
         border-radius: 0;
         box-shadow: none;
-        order: 3;
+        order: 2;
     }
 
     .logo-wrapper {
+        order: 3;
+        margin: 0;
+    }
+
+    .logo-svg {
         width: 50px;
         height: 50px;
+        margin: 0 13px 0 0;
+    }
+
+    .search-block {
+        margin: 0;
+    }
+
+    .search-string-wrapper {
+        order: 2;
     }
 
     .search-string {
         width: 280px;
-        padding: 13px 0 14px 56.59px;
+        height: 50px;
+        padding: 0 0 0 56px;
+        margin: 0 30px 0 0;
+        font-size: 20px;
+        line-height: 23px;
         background-color: var(--white);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .notifications-wrapper {
+        margin: 0 32px 0 0;
+        order: 1;
+    }
+
+    .notifications-wrapper:before {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        margin: 0 6px 0 0;
+    }
+
+    .notification-svg {
+        width: 20px;
+        height: 16px;
     }
 }

@@ -1,14 +1,15 @@
-@media all and (min-width: 1024px) {
-    .header {
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        padding: 40px;
-    }
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    align-items: center;
+    padding: 40px;
 }
 
-@media all and (min-width: 1540px) {
+@media (min-width: 1024px) {
     .header {
-        padding: 67px 0;
+        position: relative;
+        flex-flow: nowrap;
+        padding: 40px 40px 79px 40px;
     }
 }
