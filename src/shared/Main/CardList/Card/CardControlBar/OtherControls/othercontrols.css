@@ -8,3 +8,9 @@
 .add-button {
     margin: 0 7px;
 }
+
+@media all and (min-width: 1024px) {
+    .other-controls-wrapper {
+        display: none;
+    }
+}

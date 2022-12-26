@@ -35,3 +35,23 @@
 .viewed-wrapper > button.btn-down:hover > svg > path {
     fill: var(--orange);
 }
+
+@media all and (min-width: 1024px) {
+    .viewed-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .viewed-counter {
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        padding: 7px 0;
+        margin: 0;
+    }
+
+    .btn-up {
+        margin: 0;
+    }
+}

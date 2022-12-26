@@ -2,3 +2,9 @@
     display: flex;
     align-items: center;
 }
+
+@media all and (min-width: 1024px){
+    .control-bar-wrapper {
+        order: 3;
+    }
+}

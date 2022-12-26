@@ -1,8 +1,17 @@
 .card-info-title {
+    display: flex;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 19px;
-    white-space: nowrap;
     margin: 0;
+}
+
+@media all and (min-width: 1024px) {
+    .card-info-title {
+        font-size: 20px;
+        line-height: 23px;
+        margin: 0 0 10px 0;
+        order: 1;
+    }
 }

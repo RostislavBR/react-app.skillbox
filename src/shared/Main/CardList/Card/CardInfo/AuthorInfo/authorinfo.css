@@ -14,7 +14,8 @@
 }
 
 .author-title,
-.post-time {
+.post-time,
+.post-label {
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
@@ -26,6 +27,46 @@
     margin: 0 6px 0 0;
 }
 
-.post-time {
+.post-time,
+.post-label {
     color: var(--grey99);
+}
+
+.post-label {
+    display: none;
+}
+
+@media all and (min-width: 1024px) {
+    .author-wrapper {
+        margin: 0;
+        order: 2;
+    }
+
+    .logo-wrapper {
+        display: flex;
+        order: 1;
+    }
+
+    .author-title {
+        display: flex;
+        order: 2;
+        margin: 0 0 10px 0;
+    }
+
+    .author-title,
+    .post-time,
+    .post-label {
+        font-size: 14px;
+        line-height: 16px;
+        margin: 0;
+    }
+
+    .post-time {
+        margin: 0 5px 0 0;
+    }
+
+    .post-label {
+        display: inline-block;
+        margin: 0 4px 0 0;
+    }
 }
