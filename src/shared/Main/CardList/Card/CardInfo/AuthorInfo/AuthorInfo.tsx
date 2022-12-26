@@ -11,7 +11,10 @@ export function AuthorInfo() {
                 </svg>
             </div>
             <h3 className={styles['author-title']}>Дмитрий Гришин</h3>
-            <span className={styles['post-time']}>4 часа назад</span>
+            <span className={styles['post-time']}>
+                <span className={styles['post-label']}>опубликовано</span>
+                4 часа назад
+            </span>
         </div>
     );
 }

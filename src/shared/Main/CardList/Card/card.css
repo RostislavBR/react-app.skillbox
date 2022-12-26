@@ -4,3 +4,12 @@
     background-color: var(--white);
     border-radius: 7px;
 }
+
+@media all and (min-width: 1024px) {
+    .card-wrapper {
+        display: flex;
+        background: transparent;
+        padding: 0;
+    }
+
+}
