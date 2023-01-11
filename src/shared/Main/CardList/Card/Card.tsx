@@ -4,6 +4,8 @@ import {CardInfo} from "./CardInfo";
 import {CardImage} from "./CardImage";
 import {CardControlBar} from "./CardControlBar";
 import {MenuButton} from "./MenuButton";
+import {MenuList} from "./MenuList";
+import {DropDown} from "../../../DropDown";
 
 export interface CardParams {
     name: string
@@ -20,7 +22,9 @@ export function Card({name, title, description}: CardParams) {
                 description={description}
             />
             <CardImage/>
-            <MenuButton/>
+            <DropDown button={<MenuButton/>}>
+                <MenuList/>
+            </DropDown>
             <CardControlBar/>
         </div>
     );

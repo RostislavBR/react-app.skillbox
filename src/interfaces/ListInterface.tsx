@@ -1,24 +1,25 @@
 import React from "react";
 
-interface IItem {
+export interface IItem {
     id: string;
     text: string;
+    onClick: (id: string) => void;
     className?: string
-    onClick?: (id: string) => void;
     As?: 'a' | 'li' | 'button' | 'div';
     href?: string;
 }
 
-interface IListInterfaceProps {
+export interface IListInterfaceProps {
     list: IItem[];
 }
 
 export function MyList({list}: IListInterfaceProps) {
     return (
         <>
-            {list.map(({ As = 'div', text, className, onClick, href, id}) => (
+            {list.map(({ As = 'li', text, className, onClick, href, id}) => (
                 <As
                     className={className}
+                    onClick={() => onClick(id)}
                     key={id}
                     href={href}
                 >

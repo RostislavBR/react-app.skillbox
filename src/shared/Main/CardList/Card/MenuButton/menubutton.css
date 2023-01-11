@@ -16,7 +16,7 @@
 
 @media all and (min-width: 1024px){
     .menu-button {
-        top: 37px;
+        top: 40px;
         right: 46px;
         transform: rotate(90deg);
     }
