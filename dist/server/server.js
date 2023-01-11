@@ -110,6 +110,18 @@ eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod)
 
 /***/ }),
 
+/***/ "./src/interfaces/ListInterface.tsx":
+/*!******************************************!*\
+  !*** ./src/interfaces/ListInterface.tsx ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.MyList = void 0;\r\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nfunction MyList({ list }) {\r\n    return (react_1.default.createElement(react_1.default.Fragment, null, list.map(({ As = 'li', text, className, onClick, href, id }) => (react_1.default.createElement(As, { className: className, onClick: () => onClick(id), key: id, href: href }, text)))));\r\n}\r\nexports.MyList = MyList;\r\n\n\n//# sourceURL=webpack:///./src/interfaces/ListInterface.tsx?");
+
+/***/ }),
+
 /***/ "./src/main.global.css":
 /*!*****************************!*\
   !*** ./src/main.global.css ***!
@@ -117,7 +129,7 @@ eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod)
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);\"]);\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap);\"]);\n// Module\nexports.push([module.i, \":root {\\r\\n    --black: #333333;\\r\\n    --white: #ffffff;\\r\\n    --orange: #cc6633;\\r\\n    --green: #a4cc33;\\r\\n    --greyF3: #f3f3f3;\\r\\n    --greyF4: #f4f4f4;\\r\\n    --greyD9: #d9d9d9;\\r\\n    --grey99: #999999;\\r\\n    --grey66: #666666;\\r\\n    --greyC4: #C4C4C4;\\r\\n    --greyEC: #ECECEC;\\r\\n}\\r\\n\\r\\nbody {\\r\\n    padding: 0;\\r\\n    margin: 0;\\r\\n    background-color: #f4f4f4;\\r\\n    font-size: 14px;\\r\\n    line-height: 16px;\\r\\n    font-family: 'Roboto', sans-serif;\\r\\n}\\r\\n\\r\\n* {\\r\\n    color: var(--black);\\r\\n    box-sizing: border-box;\\r\\n    -webkit-font-smoothing: antialiased;\\r\\n    -moz-osx-font-smoothing: grayscale;\\r\\n    margin: 0;\\r\\n    padding: 0;\\r\\n}\\r\\n\\r\\nbutton {\\r\\n    background: transparent;\\r\\n    border: none;\\r\\n    cursor: pointer;\\r\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/main.global.css?");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);\"]);\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap);\"]);\n// Module\nexports.push([module.i, \":root {\\r\\n    --black: #333333;\\r\\n    --white: #ffffff;\\r\\n    --orange: #cc6633;\\r\\n    --green: #a4cc33;\\r\\n    --greyF3: #f3f3f3;\\r\\n    --greyF4: #f4f4f4;\\r\\n    --greyD9: #d9d9d9;\\r\\n    --grey99: #999999;\\r\\n    --grey66: #666666;\\r\\n    --greyC4: #C4C4C4;\\r\\n    --greyEC: #ECECEC;\\r\\n}\\r\\n\\r\\nbody {\\r\\n    padding: 0;\\r\\n    margin: 0;\\r\\n    background-color: #f4f4f4;\\r\\n    font-size: 14px;\\r\\n    line-height: 16px;\\r\\n    font-family: 'Roboto', sans-serif;\\r\\n}\\r\\n\\r\\n* {\\r\\n    color: var(--black);\\r\\n    box-sizing: border-box;\\r\\n    -webkit-font-smoothing: antialiased;\\r\\n    -moz-osx-font-smoothing: grayscale;\\r\\n    margin: 0;\\r\\n    padding: 0;\\r\\n}\\r\\n\\r\\nbutton {\\r\\n    background: transparent;\\r\\n    border: none;\\r\\n    cursor: pointer;\\r\\n}\\r\\n\\r\\nul {\\r\\n    padding: 0;\\r\\n    margin: 0;\\r\\n    list-style: none;\\r\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/main.global.css?");
 
 /***/ }),
 
@@ -142,6 +154,30 @@ eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nex
 
 "use strict";
 eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nconst express_1 = __importDefault(__webpack_require__(/*! express */ \"express\"));\r\nconst server_1 = __importDefault(__webpack_require__(/*! react-dom/server */ \"react-dom/server\"));\r\nconst App_1 = __webpack_require__(/*! ../App */ \"./src/App.tsx\");\r\nconst indexTemplate_1 = __webpack_require__(/*! ./indexTemplate */ \"./src/server/indexTemplate.js\");\r\nconst app = (0, express_1.default)();\r\napp.use('/static', express_1.default.static('./dist/client'));\r\napp.get('/', (req, res) => {\r\n    res.send((0, indexTemplate_1.indexTemplate)(server_1.default.renderToString((0, App_1.App)())));\r\n});\r\napp.listen(3000, () => {\r\n    console.log('Server started on http://localhost:3000');\r\n});\r\n\n\n//# sourceURL=webpack:///./src/server/server.js?");
+
+/***/ }),
+
+/***/ "./src/shared/DropDown/DropDown.tsx":
+/*!******************************************!*\
+  !*** ./src/shared/DropDown/DropDown.tsx ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.DropDown = void 0;\r\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nconst NOOP = () => {\r\n};\r\nfunction DropDown({ button, children, isOpen, onClose = NOOP, onOpen = NOOP }) {\r\n    const [isDropDownOpen, setIsDropDownOpen] = react_1.default.useState(isOpen);\r\n    react_1.default.useEffect(() => setIsDropDownOpen(isOpen), [isOpen]);\r\n    react_1.default.useEffect(() => isDropDownOpen ? onOpen() : onClose, [isDropDownOpen]);\r\n    const handleOpen = () => {\r\n        if (isOpen === undefined) {\r\n            setIsDropDownOpen(!isDropDownOpen);\r\n        }\r\n    };\r\n    return (react_1.default.createElement(\"div\", null,\r\n        react_1.default.createElement(\"div\", { onClick: handleOpen }, button),\r\n        isDropDownOpen && (react_1.default.createElement(\"div\", null,\r\n            react_1.default.createElement(\"div\", { onClick: () => setIsDropDownOpen(false) }, children)))));\r\n}\r\nexports.DropDown = DropDown;\r\n\n\n//# sourceURL=webpack:///./src/shared/DropDown/DropDown.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/DropDown/index.ts":
+/*!**************************************!*\
+  !*** ./src/shared/DropDown/index.ts ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    var desc = Object.getOwnPropertyDescriptor(m, k);\r\n    if (!desc || (\"get\" in desc ? !m.__esModule : desc.writable || desc.configurable)) {\r\n      desc = { enumerable: true, get: function() { return m[k]; } };\r\n    }\r\n    Object.defineProperty(o, k2, desc);\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\n__exportStar(__webpack_require__(/*! ./DropDown */ \"./src/shared/DropDown/DropDown.tsx\"), exports);\r\n\n\n//# sourceURL=webpack:///./src/shared/DropDown/index.ts?");
 
 /***/ }),
 
@@ -328,7 +364,7 @@ eval("// Exports\nmodule.exports = {\n\t\"layout\": \"layout__layout--2fANc\"\n}
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.Card = void 0;\r\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nconst card_css_1 = __importDefault(__webpack_require__(/*! ./card.css */ \"./src/shared/Main/CardList/Card/card.css\"));\r\nconst CardInfo_1 = __webpack_require__(/*! ./CardInfo */ \"./src/shared/Main/CardList/Card/CardInfo/index.ts\");\r\nconst CardImage_1 = __webpack_require__(/*! ./CardImage */ \"./src/shared/Main/CardList/Card/CardImage/index.ts\");\r\nconst CardControlBar_1 = __webpack_require__(/*! ./CardControlBar */ \"./src/shared/Main/CardList/Card/CardControlBar/index.ts\");\r\nconst MenuButton_1 = __webpack_require__(/*! ./MenuButton */ \"./src/shared/Main/CardList/Card/MenuButton/index.ts\");\r\nfunction Card({ name, title, description }) {\r\n    return (react_1.default.createElement(\"div\", { className: card_css_1.default['card-wrapper'] },\r\n        react_1.default.createElement(CardInfo_1.CardInfo, { name: name, title: title, description: description }),\r\n        react_1.default.createElement(CardImage_1.CardImage, null),\r\n        react_1.default.createElement(MenuButton_1.MenuButton, null),\r\n        react_1.default.createElement(CardControlBar_1.CardControlBar, null)));\r\n}\r\nexports.Card = Card;\r\n\n\n//# sourceURL=webpack:///./src/shared/Main/CardList/Card/Card.tsx?");
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.Card = void 0;\r\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nconst card_css_1 = __importDefault(__webpack_require__(/*! ./card.css */ \"./src/shared/Main/CardList/Card/card.css\"));\r\nconst CardInfo_1 = __webpack_require__(/*! ./CardInfo */ \"./src/shared/Main/CardList/Card/CardInfo/index.ts\");\r\nconst CardImage_1 = __webpack_require__(/*! ./CardImage */ \"./src/shared/Main/CardList/Card/CardImage/index.ts\");\r\nconst CardControlBar_1 = __webpack_require__(/*! ./CardControlBar */ \"./src/shared/Main/CardList/Card/CardControlBar/index.ts\");\r\nconst MenuButton_1 = __webpack_require__(/*! ./MenuButton */ \"./src/shared/Main/CardList/Card/MenuButton/index.ts\");\r\nconst MenuList_1 = __webpack_require__(/*! ./MenuList */ \"./src/shared/Main/CardList/Card/MenuList/index.ts\");\r\nconst DropDown_1 = __webpack_require__(/*! ../../../DropDown */ \"./src/shared/DropDown/index.ts\");\r\nfunction Card({ name, title, description }) {\r\n    return (react_1.default.createElement(\"div\", { className: card_css_1.default['card-wrapper'] },\r\n        react_1.default.createElement(CardInfo_1.CardInfo, { name: name, title: title, description: description }),\r\n        react_1.default.createElement(CardImage_1.CardImage, null),\r\n        react_1.default.createElement(DropDown_1.DropDown, { button: react_1.default.createElement(MenuButton_1.MenuButton, null) },\r\n            react_1.default.createElement(MenuList_1.MenuList, null)),\r\n        react_1.default.createElement(CardControlBar_1.CardControlBar, null)));\r\n}\r\nexports.Card = Card;\r\n\n\n//# sourceURL=webpack:///./src/shared/Main/CardList/Card/Card.tsx?");
 
 /***/ }),
 
@@ -647,6 +683,41 @@ eval("// Exports\nmodule.exports = {\n\t\"menu-button\": \"menubutton__menu-butt
 
 /***/ }),
 
+/***/ "./src/shared/Main/CardList/Card/MenuList/MenuList.tsx":
+/*!*************************************************************!*\
+  !*** ./src/shared/Main/CardList/Card/MenuList/MenuList.tsx ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.MenuList = void 0;\r\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nconst menulist_css_1 = __importDefault(__webpack_require__(/*! ./menulist.css */ \"./src/shared/Main/CardList/Card/MenuList/menulist.css\"));\r\nconst ListInterface_1 = __webpack_require__(/*! ../../../../../interfaces/ListInterface */ \"./src/interfaces/ListInterface.tsx\");\r\nconst generateRandomIndex_1 = __webpack_require__(/*! ../../../../../utils/react/generateRandomIndex */ \"./src/utils/react/generateRandomIndex.ts\");\r\nconst MENULIST = [\r\n    { AS: 'li', text: 'text1', className: `${menulist_css_1.default['menu-list-item']}` },\r\n    { AS: 'li', text: 'text2', className: `${menulist_css_1.default['menu-list-item']}` },\r\n    { AS: 'li', text: 'text3', className: `${menulist_css_1.default['menu-list-item']}` },\r\n].map((item) => (Object.assign(Object.assign({}, item), { id: (0, generateRandomIndex_1.generateRandomString)() })));\r\nfunction MenuList() {\r\n    const [list, setList] = react_1.default.useState(MENULIST);\r\n    const handleItemClick = (id) => {\r\n        console.log(id);\r\n    };\r\n    return (react_1.default.createElement(\"div\", { className: menulist_css_1.default['menu-wrapper'] },\r\n        react_1.default.createElement(\"ul\", { className: menulist_css_1.default['menu-list'] },\r\n            react_1.default.createElement(ListInterface_1.MyList, { list: list.map((item) => (Object.assign(Object.assign({}, item), { onClick: () => {\r\n                        console.log(item.className);\r\n                    } }))) })),\r\n        react_1.default.createElement(\"button\", { className: menulist_css_1.default['menu-list-button'] }, \"\\u0417\\u0430\\u043A\\u0440\\u044B\\u0442\\u044C\")));\r\n}\r\nexports.MenuList = MenuList;\r\n\n\n//# sourceURL=webpack:///./src/shared/Main/CardList/Card/MenuList/MenuList.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/Main/CardList/Card/MenuList/index.ts":
+/*!*********************************************************!*\
+  !*** ./src/shared/Main/CardList/Card/MenuList/index.ts ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    var desc = Object.getOwnPropertyDescriptor(m, k);\r\n    if (!desc || (\"get\" in desc ? !m.__esModule : desc.writable || desc.configurable)) {\r\n      desc = { enumerable: true, get: function() { return m[k]; } };\r\n    }\r\n    Object.defineProperty(o, k2, desc);\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\n__exportStar(__webpack_require__(/*! ./MenuList */ \"./src/shared/Main/CardList/Card/MenuList/MenuList.tsx\"), exports);\r\n\n\n//# sourceURL=webpack:///./src/shared/Main/CardList/Card/MenuList/index.ts?");
+
+/***/ }),
+
+/***/ "./src/shared/Main/CardList/Card/MenuList/menulist.css":
+/*!*************************************************************!*\
+  !*** ./src/shared/Main/CardList/Card/MenuList/menulist.css ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// Exports\nmodule.exports = {\n\t\"menu-wrapper\": \"menulist__menu-wrapper--10sV0\",\n\t\"menu-list\": \"menulist__menu-list--1Dhct\",\n\t\"menu-list-item\": \"menulist__menu-list-item--13Skd\",\n\t\"menu-list-button\": \"menulist__menu-list-button--3pjX9\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Main/CardList/Card/MenuList/menulist.css?");
+
+/***/ }),
+
 /***/ "./src/shared/Main/CardList/Card/card.css":
 /*!************************************************!*\
   !*** ./src/shared/Main/CardList/Card/card.css ***!
@@ -713,7 +784,7 @@ eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.Main = void 0;\r\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nconst CardList_1 = __webpack_require__(/*! ./CardList */ \"./src/shared/Main/CardList/index.ts\");\r\nconst generateRandomIndex_1 = __webpack_require__(/*! ../../utils/react/generateRandomIndex */ \"./src/utils/react/generateRandomIndex.ts\");\r\nconst LIST = [\r\n    {\r\n        name: 'Константин Кодов',\r\n        description: '8 часов назад',\r\n        title: 'Реплицированные с зарубежных источников возможности '\r\n    },\r\n    {\r\n        name: 'Ирина Зверева',\r\n        description: '6 часов назад',\r\n        title: 'С учётом сложившейся международной обстановки'\r\n    },\r\n    {\r\n        name: 'Владимир Петров',\r\n        description: '5 часов назад',\r\n        title: 'Следует отметить, что новая модель организационной деятельности'\r\n    },\r\n].map((item) => (Object.assign(Object.assign({}, item), { id: (0, generateRandomIndex_1.generateRandomString)() })));\r\nfunction Main() {\r\n    return (react_1.default.createElement(\"main\", null,\r\n        react_1.default.createElement(CardList_1.CardList, { cardList: LIST })));\r\n}\r\nexports.Main = Main;\r\n\n\n//# sourceURL=webpack:///./src/shared/Main/Main.tsx?");
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.Main = void 0;\r\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nconst CardList_1 = __webpack_require__(/*! ./CardList */ \"./src/shared/Main/CardList/index.ts\");\r\nconst generateRandomIndex_1 = __webpack_require__(/*! ../../utils/react/generateRandomIndex */ \"./src/utils/react/generateRandomIndex.ts\");\r\nconst LIST = [\r\n    {\r\n        name: 'Константин Кодов',\r\n        description: '8 часов назад',\r\n        title: 'Реплицированные с зарубежных источников возможности '\r\n    },\r\n    // {\r\n    //     name: 'Ирина Зверева',\r\n    //     description: '6 часов назад',\r\n    //     title: 'С учётом сложившейся международной обстановки'\r\n    // },\r\n    // {\r\n    //     name: 'Владимир Петров',\r\n    //     description: '5 часов назад',\r\n    //     title: 'Следует отметить, что новая модель организационной деятельности'\r\n    // },\r\n].map((item) => (Object.assign(Object.assign({}, item), { id: (0, generateRandomIndex_1.generateRandomString)() })));\r\nfunction Main() {\r\n    return (react_1.default.createElement(\"main\", null,\r\n        react_1.default.createElement(CardList_1.CardList, { cardList: LIST })));\r\n}\r\nexports.Main = Main;\r\n\n\n//# sourceURL=webpack:///./src/shared/Main/Main.tsx?");
 
 /***/ }),
 
