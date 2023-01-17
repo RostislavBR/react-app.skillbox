@@ -13,10 +13,14 @@ export interface IListInterfaceProps {
     list: IItem[];
 }
 
+const noop = () => {
+};
+
+
 export function MyList({list}: IListInterfaceProps) {
     return (
         <>
-            {list.map(({ As = 'li', text, className, onClick, href, id}) => (
+            {list.map(({As = 'div', text, className, onClick = noop, href, id}) => (
                 <As
                     className={className}
                     onClick={() => onClick(id)}

@@ -12,13 +12,13 @@ interface ICardListItem {
 }
 
 interface ICardListProps {
-    cardList: ICardListItem[]
+    list: ICardListItem[]
 }
 
-export function CardList({cardList}: ICardListProps) {
+export function CardList({list}: ICardListProps) {
     return (
         <div className={styles['card-list']}>
-            {cardList.map(({ title, description, name, id }) => (
+            {list.map(({ title, description, name, id }) => (
                 <Card
                     title={title}
                     description={description}

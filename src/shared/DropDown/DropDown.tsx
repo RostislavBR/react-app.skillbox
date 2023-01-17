@@ -9,8 +9,7 @@ interface IDropDownProps {
     onClose?: () => void;
 }
 
-const NOOP = () => {
-};
+const NOOP = () => {};
 
 export function DropDown({button, children, isOpen, onClose = NOOP, onOpen = NOOP}: IDropDownProps) {
     const [isDropDownOpen, setIsDropDownOpen] = React.useState(isOpen);
