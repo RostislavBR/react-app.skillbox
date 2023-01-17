@@ -11,7 +11,7 @@
 }
 
 .sort-block-item,
-.sort-block-item--default{
+.default{
     display: block;
     position: relative;
     font-size: 12px;
@@ -52,8 +52,8 @@
         flex-direction: row;
         width: 412px;
         position: absolute;
-        top: 121px;
-        right: 491px;
+        top: 122px;
+        right: 476px;
         background-color: transparent;
         padding: 0;
         margin: 0;

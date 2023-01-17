@@ -5,7 +5,7 @@ export interface IItem {
     text: string;
     onClick: (id: string) => void;
     className?: string
-    As?: 'a' | 'li' | 'button' | 'div';
+    As?: 'a' | 'li' | 'button' | 'div' | 'p';
     href?: string;
 }
 

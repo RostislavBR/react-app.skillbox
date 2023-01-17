@@ -1,16 +1,5 @@
 webpackHotUpdate("main",{
 
-/***/ "./src/interfaces/ListInterface.tsx":
-/*!******************************************!*\
-  !*** ./src/interfaces/ListInterface.tsx ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("throw new Error(\"Module parse failed: Unexpected token (10:151)\\nFile was processed with these loaders:\\n * ./node_modules/ts-loader/index.js\\nYou may need an additional loader to handle the result of these loaders.\\n| const noop = () => { };\\n| function MyList({ list }) {\\n>     return (react_1.default.createElement(react_1.default.Fragment, null, list.map(({ As = 'div', text, className, onClick = noop, href, id, default:  }) => (react_1.default.createElement(As, { className: className, onClick: () => onClick(id), key: id, href: href }, text)))));\\n| }\\n| exports.MyList = MyList;\");\n\n//# sourceURL=webpack:///./src/interfaces/ListInterface.tsx?");
-
-/***/ }),
-
 /***/ "./src/shared/Main/CardList/Card/MenuList/MenuList.tsx":
 /*!*************************************************************!*\
   !*** ./src/shared/Main/CardList/Card/MenuList/MenuList.tsx ***!
