@@ -4,9 +4,9 @@ import {MyList} from "../../../../../interfaces/ListInterface";
 import {generateRandomString} from "../../../../../utils/react/generateRandomIndex";
 
 const MENULIST = [
-    {AS: 'li', text: 'text1', className: `${styles['menu-list-item']}`},
-    {AS: 'li', text: 'text2', className: `${styles['menu-list-item']}`},
-    {AS: 'li', text: 'text3', className: `${styles['menu-list-item']}`},
+    {AS: 'li' as const, text: 'text1', className: `${styles['menu-list-item']}`},
+    {AS: 'li' as const, text: 'text2', className: `${styles['menu-list-item']}`},
+    {AS: 'li' as const, text: 'text3', className: `${styles['menu-list-item']}`},
 ].map((item) => ({...item, id: generateRandomString()}));
 
 export function MenuList() {

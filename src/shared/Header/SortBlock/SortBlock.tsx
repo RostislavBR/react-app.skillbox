@@ -6,10 +6,10 @@ import {merge} from '../../../utils/js/merge';
 import {DropDown} from "../../DropDown";
 
 const SORTLIST = [
-    {AS: 'li', text: 'Просмотренное', className: `${styles['sort-block-item']}`},
-    {AS: 'li', text: 'Сохраннённое', className: `${styles['sort-block-item']}`},
-    {AS: 'li', text: 'Мои посты', className: `${styles['sort-block-item']}`},
-    {AS: 'li', text: 'Прокомментированное', className: `${styles['sort-block-item']}`},
+    {As: 'li' as const, text: 'Просмотренное', className: `${styles['sort-block-item']}`},
+    {As: 'li' as const, text: 'Сохранённое', className: `${styles['sort-block-item']}`},
+    {As: 'li' as const, text: 'Мои посты', className: `${styles['sort-block-item']}`},
+    {As: 'li' as const, text: 'Прокомментированное', className: `${styles['sort-block-item']}`},
 ].map((item) => ({...item, id: generateRandomString()}));
 
 function pipe<U>(...fns: Function[]) {
@@ -42,12 +42,18 @@ export function SortBlock() {
 
     return (
         <div className={styles['sort-block']}>
-            <DropDown button={<div className={styles['sort-block-item']}>{defaultItem}</div>}>
-                <ul className={styles['sort-block-list']}>
-                    <MyList list={list.map((merge({onClick: handleItemClick})))}/>
-                    <button type="button" className={styles.btn}>Закрыть</button>
-                </ul>
-            </DropDown>
+            {/*<p className={styles['default']}>{defaultItem}</p>*/}
+            <div className={styles['sort-block-list']}>
+                <MyList list={list.map((merge({onClick: handleItemClick})))}/>
+                <button type="button" className={styles.btn}>Закрыть</button>
+            </div>
+
+            {/*<DropDown button={<div className={styles['sort-block-item']}>{defaultItem}</div>}>*/}
+            {/*    <ul className={styles['sort-block-list']}>*/}
+            {/*        <MyList list={list.map((merge({onClick: handleItemClick})))}/>*/}
+            {/*        <button type="button" className={styles.btn}>Закрыть</button>*/}
+            {/*    </ul>*/}
+            {/*</DropDown>*/}
         </div>
     );
 }

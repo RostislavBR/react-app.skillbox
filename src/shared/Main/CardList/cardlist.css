@@ -6,6 +6,6 @@
 @media all and (min-width: 1024px) {
     .card-list {
         background: var(--white);
-        padding: 10px 40px;
+        padding: 40px;
     }
 }
