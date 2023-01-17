@@ -1,5 +1,6 @@
 .sort-block {
     display: flex;
+    flex-direction: column;
     background-color: var(--white);
     border-radius: 7px;
 }
@@ -7,27 +8,23 @@
 .sort-block-list {
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
-    margin: 0 0 11px 0;
 }
 
-.sort-block-item {
+.sort-block-item,
+.sort-block-item--default{
     display: block;
     position: relative;
-    border-bottom: 1px solid var(--greyEC);
-    padding: 10px 0 10px 0;
-}
-
-.sort-block-item:last-child {
-    border: none;
-    padding-bottom: 0;
-}
-
-.sort-text {
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
     color: var(--grey99);
+    border-bottom: 1px solid var(--greyEC);
+    padding: 10px 20px;
+}
+
+.sort-block-item:last-child {
+    border: none;
+    /*padding-bottom: 0;*/
 }
 
 .svg {
@@ -52,6 +49,7 @@
 
 @media all and (min-width: 1024px) {
     .sort-block {
+        flex-direction: row;
         width: 412px;
         position: absolute;
         top: 121px;
@@ -69,6 +67,11 @@
     }
 
     .sort-block-item {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: var(--black);
+        white-space: nowrap;
         padding: 0 0 13px 60px;
         border-bottom: 2px solid var(--greyEC);
     }
@@ -80,14 +83,6 @@
     .sort-block-item:last-child {
         padding-left: 63px;
         border-bottom: 2px solid var(--greyEC);
-    }
-
-    .sort-text {
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 23px;
-        color: var(--black);
-        white-space: nowrap;
     }
 
     .svg {

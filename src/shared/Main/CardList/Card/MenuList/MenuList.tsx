@@ -20,7 +20,7 @@ export function MenuList() {
             <ul className={styles['menu-list']}>
                 <MyList list={list.map((item) => ({
                     ...item, onClick: () => {
-                        console.log(item.className)
+                        console.log(list)
                     }
                 }))}
                 />

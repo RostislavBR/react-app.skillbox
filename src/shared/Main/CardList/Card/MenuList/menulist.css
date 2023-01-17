@@ -1,10 +1,11 @@
 .menu-wrapper {
     position: absolute;
-    top: 90px;
-    right: -17px;
+    top: 60px;
+    right: 11px;
     width: 157px;
     max-height: 229px;
     background: var(--white);
+    z-index: 10;
 }
 
 .menu-list {
@@ -43,4 +44,11 @@
     color: var(--grey66);
     background: var(--greyD9);
     border-radius: 0 0 3px 0;
+}
+
+@media all and (min-width: 1024px){
+    .menu-wrapper {
+        top: 90px;
+        right: -17px;
+    }
 }
