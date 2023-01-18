@@ -1,8 +1,12 @@
 import React from 'react';
 import styles from './cardinfotitle.css';
 
-export function CardInfoTitle() {
+interface ICardTitle {
+    title: string
+}
+
+export function CardInfoTitle({title} : ICardTitle) {
     return (
-        <h1 className={styles['card-info-title']}>Реализация намеченных плановых<br/>заданий</h1>
+        <h1 className={styles['card-info-title']}>{title}</h1>
     );
 }

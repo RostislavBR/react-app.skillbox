@@ -1,15 +1,14 @@
 .header {
     display: flex;
-    flex-direction: row;
-    flex-flow: nowrap;
-    align-items: center;
-    padding: 40px;
+    flex-direction: column;
+    /*margin: 0 0 20px 0;*/
 }
 
 @media (min-width: 1024px) {
     .header {
         position: relative;
         flex-flow: nowrap;
-        padding: 40px 40px 79px 40px;
+        align-items: center;
+        padding: 40px 40px 69px 40px;
     }
 }

@@ -16,13 +16,14 @@
 }
 
 .person-name {
-    display: flex;
+    display: none;
     align-items: center;
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
     color: var(--orange);
 }
+
 
 .logo-svg {
     width: 30px;
@@ -127,5 +128,9 @@
     .notification-svg {
         width: 20px;
         height: 16px;
+    }
+
+    .person-name {
+        display: flex;
     }
 }
