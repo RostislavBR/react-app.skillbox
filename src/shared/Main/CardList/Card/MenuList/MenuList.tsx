@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./menulist.css";
 import {MyList} from "../../../../../interfaces/ListInterface";
-import {generateRandomString} from "../../../../../utils/react/generateRandomIndex";
+import {generateId, generateRandomString} from "../../../../../utils/react/generateRandomIndex";
 
 const MENULIST = [
     {AS: 'li' as const, text: 'text1', className: `${styles['menu-list-item']}`},
     {AS: 'li' as const, text: 'text2', className: `${styles['menu-list-item']}`},
     {AS: 'li' as const, text: 'text3', className: `${styles['menu-list-item']}`},
-].map((item) => ({...item, id: generateRandomString()}));
+].map(generateId);
 
 export function MenuList() {
     const [list, setList] = React.useState(MENULIST);
