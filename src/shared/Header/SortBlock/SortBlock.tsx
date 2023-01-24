@@ -1,7 +1,7 @@
 import React, {useRef} from 'react';
 import styles from './sortblock.css';
 import {MyList} from "../../../interfaces/ListInterface";
-import {generateRandomString} from "../../../utils/react/generateRandomIndex";
+import {generateId} from "../../../utils/react/generateRandomIndex";
 import {merge} from '../../../utils/js/merge';
 import {DropDown} from "../../DropDown";
 
@@ -10,7 +10,7 @@ const SORTLIST = [
     {As: 'li' as const, text: 'Сохранённое', className: `${styles['sort-block-item']}`},
     {As: 'li' as const, text: 'Мои посты', className: `${styles['sort-block-item']}`},
     {As: 'li' as const, text: 'Прокомментированное', className: `${styles['sort-block-item']}`},
-].map((item) => ({...item, id: generateRandomString()}));
+].map(generateId);
 
 function pipe<U>(...fns: Function[]) {
     return <E, >(initialValue: any): U =>
