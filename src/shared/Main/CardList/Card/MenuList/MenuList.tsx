@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./menulist.css";
 import {MyList} from "../../../../../interfaces/ListInterface";
-import {generateId, generateRandomString} from "../../../../../utils/react/generateRandomIndex";
+import {generateId} from "../../../../../utils/react/generateRandomIndex";
 
 const MENULIST = [
     {AS: 'li' as const, text: 'text1', className: `${styles['menu-list-item']}`},

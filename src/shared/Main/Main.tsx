@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './main.css';
 import {CardList} from "./CardList";
-import {generateRandomString} from "../../utils/react/generateRandomIndex";
+import {generateId} from "../../utils/react/generateRandomIndex";
 
 const LIST = [
     {
@@ -19,7 +19,7 @@ const LIST = [
         description: '5 часов назад',
         title: 'Следует отметить, что новая модель организационной деятельности'
     },
-].map((item) => ({...item, id: generateRandomString()}));
+].map(generateId);
 
 export function Main() {
 
