@@ -4,9 +4,8 @@ import {MyList} from "../../../../../interfaces/ListInterface";
 import {generateId} from "../../../../../utils/react/generateRandomIndex";
 
 const MENULIST = [
-    {AS: 'li' as const, text: 'text1', className: `${styles['menu-list-item']}`},
-    {AS: 'li' as const, text: 'text2', className: `${styles['menu-list-item']}`},
-    {AS: 'li' as const, text: 'text3', className: `${styles['menu-list-item']}`},
+    {AS: 'li' as const, text: 'Скрыть', className: `${styles['menu-list-item']}`},
+    {AS: 'li' as const, text: 'Пожаловаться', className: `${styles['menu-list-item']}`},
 ].map(generateId);
 
 export function MenuList() {
