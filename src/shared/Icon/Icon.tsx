@@ -19,6 +19,6 @@ interface IIconsProps {
 
 export function Icon() {
     return (
-
-    );
+        <div>text</div>
+    )
 }
