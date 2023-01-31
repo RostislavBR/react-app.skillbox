@@ -10,26 +10,6 @@
     margin: 0 0 18px;
 }
 
-.logo-wrapper {
-    display: flex;
-    margin: 0 14px 0 0;
-}
-
-.person-name {
-    display: none;
-    align-items: center;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
-    color: var(--orange);
-}
-
-
-.logo-svg {
-    width: 30px;
-    height: 30px;
-}
-
 .search-string-wrapper {
     display: block;
 }
@@ -83,16 +63,6 @@
         order: 2;
     }
 
-    .logo-wrapper {
-        order: 3;
-        margin: 0;
-    }
-
-    .logo-svg {
-        width: 50px;
-        height: 50px;
-        margin: 0 13px 0 0;
-    }
 
     .search-block {
         margin: 0;
@@ -128,9 +98,5 @@
     .notification-svg {
         width: 20px;
         height: 16px;
-    }
-
-    .person-name {
-        display: flex;
     }
 }
