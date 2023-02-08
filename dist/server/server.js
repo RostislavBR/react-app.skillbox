@@ -228,6 +228,41 @@ eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod)
 
 /***/ }),
 
+/***/ "./src/shared/Header/SearchBlock/NotificationIcon/NotificationIcon.tsx":
+/*!*****************************************************************************!*\
+  !*** ./src/shared/Header/SearchBlock/NotificationIcon/NotificationIcon.tsx ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.NotificationIcon = void 0;\r\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nconst notificationicon_css_1 = __importDefault(__webpack_require__(/*! ./notificationicon.css */ \"./src/shared/Header/SearchBlock/NotificationIcon/notificationicon.css\"));\r\nfunction NotificationIcon() {\r\n    return (react_1.default.createElement(\"div\", { className: notificationicon_css_1.default['notifications-wrapper'] },\r\n        react_1.default.createElement(\"svg\", { width: \"13\", height: \"11\", viewBox: \"0 0 13 11\", fill: \"none\", xmlns: \"http://www.w3.org/2000/svg\", className: notificationicon_css_1.default['notification-svg'] },\r\n            react_1.default.createElement(\"path\", { d: \"M11.7235 0.276367H1.51072C0.808598 0.276367 0.240514 0.850834 0.240514 1.55296L0.234131 9.21252C0.234131 9.91465 0.808598 10.4891 1.51072 10.4891H11.7235C12.4256 10.4891 13.0001 9.91465 13.0001 9.21252V1.55296C13.0001 0.850834 12.4256 0.276367 11.7235 0.276367ZM11.7235 2.82955L6.6171 6.02104L1.51072 2.82955V1.55296L6.6171 4.74444L11.7235 1.55296V2.82955Z\", fill: \"#D9D9D9\" }))));\r\n}\r\nexports.NotificationIcon = NotificationIcon;\r\n\n\n//# sourceURL=webpack:///./src/shared/Header/SearchBlock/NotificationIcon/NotificationIcon.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/Header/SearchBlock/NotificationIcon/index.ts":
+/*!*****************************************************************!*\
+  !*** ./src/shared/Header/SearchBlock/NotificationIcon/index.ts ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    var desc = Object.getOwnPropertyDescriptor(m, k);\r\n    if (!desc || (\"get\" in desc ? !m.__esModule : desc.writable || desc.configurable)) {\r\n      desc = { enumerable: true, get: function() { return m[k]; } };\r\n    }\r\n    Object.defineProperty(o, k2, desc);\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\n__exportStar(__webpack_require__(/*! ./NotificationIcon */ \"./src/shared/Header/SearchBlock/NotificationIcon/NotificationIcon.tsx\"), exports);\r\n\n\n//# sourceURL=webpack:///./src/shared/Header/SearchBlock/NotificationIcon/index.ts?");
+
+/***/ }),
+
+/***/ "./src/shared/Header/SearchBlock/NotificationIcon/notificationicon.css":
+/*!*****************************************************************************!*\
+  !*** ./src/shared/Header/SearchBlock/NotificationIcon/notificationicon.css ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// Exports\nmodule.exports = {\n\t\"notifications-wrapper\": \"notificationicon__notifications-wrapper--N4QFT\",\n\t\"notification-svg\": \"notificationicon__notification-svg--1JkoG\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Header/SearchBlock/NotificationIcon/notificationicon.css?");
+
+/***/ }),
+
 /***/ "./src/shared/Header/SearchBlock/SearchBlock.tsx":
 /*!*******************************************************!*\
   !*** ./src/shared/Header/SearchBlock/SearchBlock.tsx ***!
@@ -236,7 +271,7 @@ eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod)
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.SearchBlock = void 0;\r\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nconst searchblock_css_1 = __importDefault(__webpack_require__(/*! ./searchblock.css */ \"./src/shared/Header/SearchBlock/searchblock.css\"));\r\nconst UserBlock_1 = __webpack_require__(/*! ./UserBlock */ \"./src/shared/Header/SearchBlock/UserBlock/index.ts\");\r\nfunction SearchBlock() {\r\n    return (react_1.default.createElement(\"div\", { className: searchblock_css_1.default['search-block'] },\r\n        react_1.default.createElement(UserBlock_1.UserBlock, null),\r\n        react_1.default.createElement(\"div\", { className: searchblock_css_1.default['search-string-wrapper'] },\r\n            react_1.default.createElement(\"input\", { type: \"text\", className: searchblock_css_1.default['search-string'], placeholder: 'Поиск' })),\r\n        react_1.default.createElement(\"div\", { className: searchblock_css_1.default['notifications-wrapper'] },\r\n            react_1.default.createElement(\"svg\", { width: \"13\", height: \"11\", viewBox: \"0 0 13 11\", fill: \"none\", xmlns: \"http://www.w3.org/2000/svg\", className: searchblock_css_1.default['notification-svg'] },\r\n                react_1.default.createElement(\"path\", { d: \"M11.7235 0.276367H1.51072C0.808598 0.276367 0.240514 0.850834 0.240514 1.55296L0.234131 9.21252C0.234131 9.91465 0.808598 10.4891 1.51072 10.4891H11.7235C12.4256 10.4891 13.0001 9.91465 13.0001 9.21252V1.55296C13.0001 0.850834 12.4256 0.276367 11.7235 0.276367ZM11.7235 2.82955L6.6171 6.02104L1.51072 2.82955V1.55296L6.6171 4.74444L11.7235 1.55296V2.82955Z\", fill: \"#D9D9D9\" })))));\r\n}\r\nexports.SearchBlock = SearchBlock;\r\n\n\n//# sourceURL=webpack:///./src/shared/Header/SearchBlock/SearchBlock.tsx?");
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.SearchBlock = void 0;\r\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nconst searchblock_css_1 = __importDefault(__webpack_require__(/*! ./searchblock.css */ \"./src/shared/Header/SearchBlock/searchblock.css\"));\r\nconst UserBlock_1 = __webpack_require__(/*! ./UserBlock */ \"./src/shared/Header/SearchBlock/UserBlock/index.ts\");\r\nconst NotificationIcon_1 = __webpack_require__(/*! ./NotificationIcon */ \"./src/shared/Header/SearchBlock/NotificationIcon/index.ts\");\r\nfunction SearchBlock() {\r\n    return (react_1.default.createElement(\"div\", { className: searchblock_css_1.default['search-block'] },\r\n        react_1.default.createElement(UserBlock_1.UserBlock, null),\r\n        react_1.default.createElement(\"div\", { className: searchblock_css_1.default['search-string-wrapper'] },\r\n            react_1.default.createElement(\"input\", { type: \"text\", className: searchblock_css_1.default['search-string'], placeholder: 'Поиск' })),\r\n        react_1.default.createElement(NotificationIcon_1.NotificationIcon, null)));\r\n}\r\nexports.SearchBlock = SearchBlock;\r\n\n\n//# sourceURL=webpack:///./src/shared/Header/SearchBlock/SearchBlock.tsx?");
 
 /***/ }),
 
@@ -271,7 +306,7 @@ eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// Exports\nmodule.exports = {\n\t\"user-box\": \"userblock__user-box--1c4h7\",\n\t\"avatar-box\": \"userblock__avatar-box--2Qb4a\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Header/SearchBlock/UserBlock/userblock.css?");
+eval("// Exports\nmodule.exports = {\n\t\"user-box\": \"userblock__user-box--1c4h7\",\n\t\"avatar-box\": \"userblock__avatar-box--2Qb4a\",\n\t\"user-name\": \"userblock__user-name--1HOXQ\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Header/SearchBlock/UserBlock/userblock.css?");
 
 /***/ }),
 
@@ -294,7 +329,7 @@ eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// Exports\nmodule.exports = {\n\t\"search-block\": \"searchblock__search-block--2bQd-\",\n\t\"search-string-wrapper\": \"searchblock__search-string-wrapper--2oJfy\",\n\t\"search-string\": \"searchblock__search-string--3zlgT\",\n\t\"notifications-wrapper\": \"searchblock__notifications-wrapper--UWePB\",\n\t\"notification-svg\": \"searchblock__notification-svg--1_hoo\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Header/SearchBlock/searchblock.css?");
+eval("// Exports\nmodule.exports = {\n\t\"search-block\": \"searchblock__search-block--2bQd-\",\n\t\"search-string-wrapper\": \"searchblock__search-string-wrapper--2oJfy\",\n\t\"search-string\": \"searchblock__search-string--3zlgT\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Header/SearchBlock/searchblock.css?");
 
 /***/ }),
 
@@ -380,6 +415,18 @@ eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create
 
 /***/ }),
 
+/***/ "./src/shared/Icons/CommentIcon.tsx":
+/*!******************************************!*\
+  !*** ./src/shared/Icons/CommentIcon.tsx ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.CommentIcon = void 0;\r\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nfunction CommentIcon() {\r\n    return (react_1.default.createElement(\"svg\", { width: \"15\", height: \"15\", viewBox: \"0 0 15 15\", fill: \"none\", xmlns: \"http://www.w3.org/2000/svg\" },\r\n        react_1.default.createElement(\"path\", { d: \"M12.75 0H1.41667C0.6375 0 0 0.6375 0 1.41667V9.91667C0 10.6958 0.6375 11.3333 1.41667 11.3333H11.3333L14.1667 14.1667V1.41667C14.1667 0.6375 13.5292 0 12.75 0ZM11.3333 8.5H2.83333V7.08333H11.3333V8.5ZM11.3333 6.375H2.83333V4.95833H11.3333V6.375ZM11.3333 4.25H2.83333V2.83333H11.3333V4.25Z\", fill: \"#C4C4C4\" })));\r\n}\r\nexports.CommentIcon = CommentIcon;\r\n\n\n//# sourceURL=webpack:///./src/shared/Icons/CommentIcon.tsx?");
+
+/***/ }),
+
 /***/ "./src/shared/Icons/IconAnon.tsx":
 /*!***************************************!*\
   !*** ./src/shared/Icons/IconAnon.tsx ***!
@@ -401,6 +448,30 @@ eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod)
 
 "use strict";
 eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.MenuIcon = void 0;\r\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nfunction MenuIcon() {\r\n    return (react_1.default.createElement(\"svg\", { width: \"20\", height: \"5\", viewBox: \"0 0 20 5\", fill: \"none\", xmlns: \"http://www.w3.org/2000/svg\" },\r\n        react_1.default.createElement(\"circle\", { cx: \"17.5\", cy: \"2.5\", r: \"2.5\", transform: \"rotate(90 17.5 2.5)\", fill: \"#D9D9D9\" }),\r\n        react_1.default.createElement(\"circle\", { cx: \"10\", cy: \"2.5\", r: \"2.5\", transform: \"rotate(90 10 2.5)\", fill: \"#D9D9D9\" }),\r\n        react_1.default.createElement(\"circle\", { cx: \"2.5\", cy: \"2.5\", r: \"2.5\", transform: \"rotate(90 2.5 2.5)\", fill: \"#D9D9D9\" })));\r\n}\r\nexports.MenuIcon = MenuIcon;\r\n\n\n//# sourceURL=webpack:///./src/shared/Icons/MenuIcon.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/Icons/SavedIcon.tsx":
+/*!****************************************!*\
+  !*** ./src/shared/Icons/SavedIcon.tsx ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.SavedIcon = void 0;\r\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nfunction SavedIcon() {\r\n    return (react_1.default.createElement(\"svg\", { width: \"20\", height: \"20\", viewBox: \"0 0 20 20\", fill: \"none\", xmlns: \"http://www.w3.org/2000/svg\" },\r\n        react_1.default.createElement(\"circle\", { cx: \"10\", cy: \"10\", r: \"10\", fill: \"#C4C4C4\" }),\r\n        react_1.default.createElement(\"path\", { d: \"M6 7H5V14C5 14.55 5.45 15 6 15H13V14H6V7ZM14 5H8C7.45 5 7 5.45 7 6V12C7 12.55 7.45 13 8 13H14C14.55 13 15 12.55 15 12V6C15 5.45 14.55 5 14 5ZM13.5 9.5H11.5V11.5H10.5V9.5H8.5V8.5H10.5V6.5H11.5V8.5H13.5V9.5Z\", fill: \"white\" })));\r\n}\r\nexports.SavedIcon = SavedIcon;\r\n\n\n//# sourceURL=webpack:///./src/shared/Icons/SavedIcon.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/Icons/ShareIcon.tsx":
+/*!****************************************!*\
+  !*** ./src/shared/Icons/ShareIcon.tsx ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.ShareIcon = void 0;\r\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nfunction ShareIcon() {\r\n    return (react_1.default.createElement(\"svg\", { width: \"20\", height: \"20\", viewBox: \"0 0 20 20\", fill: \"none\", xmlns: \"http://www.w3.org/2000/svg\" },\r\n        react_1.default.createElement(\"circle\", { cx: \"10\", cy: \"10\", r: \"10\", fill: \"#C4C4C4\" }),\r\n        react_1.default.createElement(\"path\", { d: \"M11.6667 12.0683C11.3289 12.0683 11.0267 12.2189 10.7956 12.4548L7.62667 10.3715C7.64889 10.256 7.66667 10.1406 7.66667 10.0201C7.66667 9.8996 7.64889 9.78414 7.62667 9.66867L10.76 7.60542C11 7.85643 11.3156 8.01205 11.6667 8.01205C12.4044 8.01205 13 7.33936 13 6.50602C13 5.67269 12.4044 5 11.6667 5C10.9289 5 10.3333 5.67269 10.3333 6.50602C10.3333 6.62651 10.3511 6.74197 10.3733 6.85743L7.24 8.92068C7 8.66968 6.68444 8.51406 6.33333 8.51406C5.59556 8.51406 5 9.18675 5 10.0201C5 10.8534 5.59556 11.5261 6.33333 11.5261C6.68444 11.5261 7 11.3705 7.24 11.1195L10.4044 13.2078C10.3822 13.3133 10.3689 13.4237 10.3689 13.5341C10.3689 14.3424 10.9511 15 11.6667 15C12.3822 15 12.9644 14.3424 12.9644 13.5341C12.9644 12.7259 12.3822 12.0683 11.6667 12.0683Z\", fill: \"white\" })));\r\n}\r\nexports.ShareIcon = ShareIcon;\r\n\n\n//# sourceURL=webpack:///./src/shared/Icons/ShareIcon.tsx?");
 
 /***/ }),
 
@@ -483,7 +554,7 @@ eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod)
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.CommentCounter = void 0;\r\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nconst commentcounter_css_1 = __importDefault(__webpack_require__(/*! ./commentcounter.css */ \"./src/shared/Main/CardList/Card/CardControlBar/CommentCounter/commentcounter.css\"));\r\nfunction CommentCounter() {\r\n    return (react_1.default.createElement(\"div\", { className: commentcounter_css_1.default['comment-wrapper'] },\r\n        react_1.default.createElement(\"button\", { className: commentcounter_css_1.default['comment-button'] },\r\n            react_1.default.createElement(\"svg\", { width: \"15\", height: \"15\", viewBox: \"0 0 15 15\", fill: \"none\", xmlns: \"http://www.w3.org/2000/svg\", className: commentcounter_css_1.default['comment-svg'] },\r\n                react_1.default.createElement(\"path\", { d: \"M12.75 0H1.41667C0.6375 0 0 0.6375 0 1.41667V9.91667C0 10.6958 0.6375 11.3333 1.41667 11.3333H11.3333L14.1667 14.1667V1.41667C14.1667 0.6375 13.5292 0 12.75 0ZM11.3333 8.5H2.83333V7.08333H11.3333V8.5ZM11.3333 6.375H2.83333V4.95833H11.3333V6.375ZM11.3333 4.25H2.83333V2.83333H11.3333V4.25Z\", fill: \"#C4C4C4\" })),\r\n            react_1.default.createElement(\"span\", { className: commentcounter_css_1.default['comment-counter'] }, \"27\"))));\r\n}\r\nexports.CommentCounter = CommentCounter;\r\n\n\n//# sourceURL=webpack:///./src/shared/Main/CardList/Card/CardControlBar/CommentCounter/CommentCounter.tsx?");
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.CommentCounter = void 0;\r\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nconst commentcounter_css_1 = __importDefault(__webpack_require__(/*! ./commentcounter.css */ \"./src/shared/Main/CardList/Card/CardControlBar/CommentCounter/commentcounter.css\"));\r\nconst CommentIcon_1 = __webpack_require__(/*! ../../../../../Icons/CommentIcon */ \"./src/shared/Icons/CommentIcon.tsx\");\r\nfunction CommentCounter() {\r\n    return (react_1.default.createElement(\"div\", { className: commentcounter_css_1.default['comment-wrapper'] },\r\n        react_1.default.createElement(\"button\", { className: commentcounter_css_1.default['comment-button'] },\r\n            react_1.default.createElement(CommentIcon_1.CommentIcon, null),\r\n            react_1.default.createElement(\"span\", { className: commentcounter_css_1.default['comment-counter'] }, \"27\"))));\r\n}\r\nexports.CommentCounter = CommentCounter;\r\n\n\n//# sourceURL=webpack:///./src/shared/Main/CardList/Card/CardControlBar/CommentCounter/CommentCounter.tsx?");
 
 /***/ }),
 
@@ -494,7 +565,7 @@ eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod)
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// Exports\nmodule.exports = {\n\t\"comment-wrapper\": \"commentcounter__comment-wrapper--1Waef\",\n\t\"comment-button\": \"commentcounter__comment-button--23K-n\",\n\t\"comment-svg\": \"commentcounter__comment-svg--3C2cR\",\n\t\"comment-counter\": \"commentcounter__comment-counter--3qIR0\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Main/CardList/Card/CardControlBar/CommentCounter/commentcounter.css?");
+eval("// Exports\nmodule.exports = {\n\t\"comment-wrapper\": \"commentcounter__comment-wrapper--1Waef\",\n\t\"comment-button\": \"commentcounter__comment-button--23K-n\",\n\t\"comment-counter\": \"commentcounter__comment-counter--3qIR0\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Main/CardList/Card/CardControlBar/CommentCounter/commentcounter.css?");
 
 /***/ }),
 
@@ -518,7 +589,7 @@ eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.OtherControls = void 0;\r\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nconst othercontrols_css_1 = __importDefault(__webpack_require__(/*! ./othercontrols.css */ \"./src/shared/Main/CardList/Card/CardControlBar/OtherControls/othercontrols.css\"));\r\nfunction OtherControls() {\r\n    return (react_1.default.createElement(\"div\", { className: othercontrols_css_1.default['other-controls-wrapper'] },\r\n        react_1.default.createElement(\"button\", { className: othercontrols_css_1.default['share-button'] },\r\n            react_1.default.createElement(\"svg\", { width: \"20\", height: \"20\", viewBox: \"0 0 20 20\", fill: \"none\", xmlns: \"http://www.w3.org/2000/svg\" },\r\n                react_1.default.createElement(\"circle\", { cx: \"10\", cy: \"10\", r: \"10\", fill: \"#C4C4C4\" }),\r\n                react_1.default.createElement(\"path\", { d: \"M11.6667 12.0683C11.3289 12.0683 11.0267 12.2189 10.7956 12.4548L7.62667 10.3715C7.64889 10.256 7.66667 10.1406 7.66667 10.0201C7.66667 9.8996 7.64889 9.78414 7.62667 9.66867L10.76 7.60542C11 7.85643 11.3156 8.01205 11.6667 8.01205C12.4044 8.01205 13 7.33936 13 6.50602C13 5.67269 12.4044 5 11.6667 5C10.9289 5 10.3333 5.67269 10.3333 6.50602C10.3333 6.62651 10.3511 6.74197 10.3733 6.85743L7.24 8.92068C7 8.66968 6.68444 8.51406 6.33333 8.51406C5.59556 8.51406 5 9.18675 5 10.0201C5 10.8534 5.59556 11.5261 6.33333 11.5261C6.68444 11.5261 7 11.3705 7.24 11.1195L10.4044 13.2078C10.3822 13.3133 10.3689 13.4237 10.3689 13.5341C10.3689 14.3424 10.9511 15 11.6667 15C12.3822 15 12.9644 14.3424 12.9644 13.5341C12.9644 12.7259 12.3822 12.0683 11.6667 12.0683Z\", fill: \"white\" }))),\r\n        react_1.default.createElement(\"button\", { className: othercontrols_css_1.default['add-button'] },\r\n            react_1.default.createElement(\"svg\", { width: \"20\", height: \"20\", viewBox: \"0 0 20 20\", fill: \"none\", xmlns: \"http://www.w3.org/2000/svg\" },\r\n                react_1.default.createElement(\"circle\", { cx: \"10\", cy: \"10\", r: \"10\", fill: \"#C4C4C4\" }),\r\n                react_1.default.createElement(\"path\", { d: \"M6 7H5V14C5 14.55 5.45 15 6 15H13V14H6V7ZM14 5H8C7.45 5 7 5.45 7 6V12C7 12.55 7.45 13 8 13H14C14.55 13 15 12.55 15 12V6C15 5.45 14.55 5 14 5ZM13.5 9.5H11.5V11.5H10.5V9.5H8.5V8.5H10.5V6.5H11.5V8.5H13.5V9.5Z\", fill: \"white\" })))));\r\n}\r\nexports.OtherControls = OtherControls;\r\n\n\n//# sourceURL=webpack:///./src/shared/Main/CardList/Card/CardControlBar/OtherControls/OtherControls.tsx?");
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.OtherControls = void 0;\r\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nconst othercontrols_css_1 = __importDefault(__webpack_require__(/*! ./othercontrols.css */ \"./src/shared/Main/CardList/Card/CardControlBar/OtherControls/othercontrols.css\"));\r\nconst ShareIcon_1 = __webpack_require__(/*! ../../../../../Icons/ShareIcon */ \"./src/shared/Icons/ShareIcon.tsx\");\r\nconst SavedIcon_1 = __webpack_require__(/*! ../../../../../Icons/SavedIcon */ \"./src/shared/Icons/SavedIcon.tsx\");\r\nfunction OtherControls() {\r\n    return (react_1.default.createElement(\"div\", { className: othercontrols_css_1.default['other-controls-wrapper'] },\r\n        react_1.default.createElement(\"button\", { className: othercontrols_css_1.default['share-button'] },\r\n            react_1.default.createElement(ShareIcon_1.ShareIcon, null)),\r\n        react_1.default.createElement(\"button\", { className: othercontrols_css_1.default['saved-button'] },\r\n            react_1.default.createElement(SavedIcon_1.SavedIcon, null))));\r\n}\r\nexports.OtherControls = OtherControls;\r\n\n\n//# sourceURL=webpack:///./src/shared/Main/CardList/Card/CardControlBar/OtherControls/OtherControls.tsx?");
 
 /***/ }),
 
@@ -541,7 +612,7 @@ eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// Exports\nmodule.exports = {\n\t\"other-controls-wrapper\": \"othercontrols__other-controls-wrapper--2au4l\",\n\t\"share-button\": \"othercontrols__share-button--2vCVC\",\n\t\"add-button\": \"othercontrols__add-button--3VVLM\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Main/CardList/Card/CardControlBar/OtherControls/othercontrols.css?");
+eval("// Exports\nmodule.exports = {\n\t\"other-controls-wrapper\": \"othercontrols__other-controls-wrapper--2au4l\",\n\t\"share-button\": \"othercontrols__share-button--2vCVC\",\n\t\"saved-button\": \"othercontrols__saved-button--33Loh\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Main/CardList/Card/CardControlBar/OtherControls/othercontrols.css?");
 
 /***/ }),
 
@@ -646,7 +717,7 @@ eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.AuthorInfo = void 0;\r\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nconst authorinfo_css_1 = __importDefault(__webpack_require__(/*! ./authorinfo.css */ \"./src/shared/Main/CardList/Card/CardInfo/AuthorInfo/authorinfo.css\"));\r\nconst Text_1 = __webpack_require__(/*! ../../../../../Text */ \"./src/shared/Text/index.ts\");\r\nconst Break_1 = __webpack_require__(/*! ../../../../../Break */ \"./src/shared/Break/index.ts\");\r\nfunction AuthorInfo({ name, description }) {\r\n    return (react_1.default.createElement(\"div\", { className: authorinfo_css_1.default['author-wrapper'] },\r\n        react_1.default.createElement(\"div\", { className: authorinfo_css_1.default['logo-wrapper'] },\r\n            react_1.default.createElement(\"svg\", { width: \"56px\", height: \"56px\", viewBox: \"0 0 56 56\", xmlns: \"http://www.w3.org/2000/svg\", className: authorinfo_css_1.default['logo-svg'] },\r\n                react_1.default.createElement(\"path\", { d: \"M 27.9999 51.9062 C 41.0546 51.9062 51.9063 41.0547 51.9063 28.0000 C 51.9063 14.9219 41.0312 4.0938 27.9765 4.0938 C 14.8983 4.0938 4.0937 14.9219 4.0937 28.0000 C 4.0937 41.0547 14.9218 51.9062 27.9999 51.9062 Z M 27.9999 26.6875 C 24.7421 26.6640 22.1640 23.9453 22.1640 20.3125 C 22.1640 16.9140 24.7421 14.0781 27.9999 14.0781 C 31.2343 14.0781 33.8124 16.9140 33.8124 20.3125 C 33.8124 23.9453 31.2343 26.7344 27.9999 26.6875 Z M 17.6171 39.7422 C 16.7030 39.7422 16.2577 39.1328 16.2577 38.3125 C 16.2577 35.8047 20.0312 29.3594 27.9999 29.3594 C 35.9687 29.3594 39.7187 35.8047 39.7187 38.3125 C 39.7187 39.1328 39.2733 39.7422 38.3827 39.7422 Z\" }))),\r\n        react_1.default.createElement(Text_1.Text, { size: 10, color: Text_1.EColor.orange }, name),\r\n        react_1.default.createElement(Break_1.Break, { size: 4 }),\r\n        react_1.default.createElement(Text_1.Text, { size: 10, color: Text_1.EColor.grey99 },\r\n            react_1.default.createElement(\"span\", { className: authorinfo_css_1.default['post-label'] }, \"\\u043E\\u043F\\u0443\\u0431\\u043B\\u0438\\u043A\\u043E\\u0432\\u0430\\u043D\\u043E\"),\r\n            description)));\r\n}\r\nexports.AuthorInfo = AuthorInfo;\r\n\n\n//# sourceURL=webpack:///./src/shared/Main/CardList/Card/CardInfo/AuthorInfo/AuthorInfo.tsx?");
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.AuthorInfo = void 0;\r\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nconst authorinfo_css_1 = __importDefault(__webpack_require__(/*! ./authorinfo.css */ \"./src/shared/Main/CardList/Card/CardInfo/AuthorInfo/authorinfo.css\"));\r\nconst Text_1 = __webpack_require__(/*! ../../../../../Text */ \"./src/shared/Text/index.ts\");\r\nconst Break_1 = __webpack_require__(/*! ../../../../../Break */ \"./src/shared/Break/index.ts\");\r\nconst IconAnon_1 = __webpack_require__(/*! ../../../../../Icons/IconAnon */ \"./src/shared/Icons/IconAnon.tsx\");\r\nfunction AuthorInfo({ name, description, avatarSrc }) {\r\n    return (react_1.default.createElement(\"div\", { className: authorinfo_css_1.default['author-wrapper'] },\r\n        react_1.default.createElement(\"div\", { className: authorinfo_css_1.default['logo-wrapper'] }, avatarSrc\r\n            ? react_1.default.createElement(\"img\", { src: avatarSrc, alt: \"user avatar\" })\r\n            : react_1.default.createElement(IconAnon_1.IconAnon, null)),\r\n        react_1.default.createElement(Text_1.Text, { size: 10, color: Text_1.EColor.orange }, name),\r\n        react_1.default.createElement(Break_1.Break, { size: 4 }),\r\n        react_1.default.createElement(Text_1.Text, { size: 10, color: Text_1.EColor.grey99 },\r\n            react_1.default.createElement(\"span\", { className: authorinfo_css_1.default['post-label'] }, \"\\u043E\\u043F\\u0443\\u0431\\u043B\\u0438\\u043A\\u043E\\u0432\\u0430\\u043D\\u043E\"),\r\n            description)));\r\n}\r\nexports.AuthorInfo = AuthorInfo;\r\n\n\n//# sourceURL=webpack:///./src/shared/Main/CardList/Card/CardInfo/AuthorInfo/AuthorInfo.tsx?");
 
 /***/ }),
 
@@ -657,7 +728,7 @@ eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod)
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// Exports\nmodule.exports = {\n\t\"author-wrapper\": \"authorinfo__author-wrapper--1Bh4E\",\n\t\"logo-wrapper\": \"authorinfo__logo-wrapper--26CIA\",\n\t\"logo-svg\": \"authorinfo__logo-svg--36WRr\",\n\t\"author-title\": \"authorinfo__author-title--27q1D\",\n\t\"post-time\": \"authorinfo__post-time--24kfK\",\n\t\"post-label\": \"authorinfo__post-label--3c2Q6\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Main/CardList/Card/CardInfo/AuthorInfo/authorinfo.css?");
+eval("// Exports\nmodule.exports = {\n\t\"author-wrapper\": \"authorinfo__author-wrapper--1Bh4E\",\n\t\"logo-wrapper\": \"authorinfo__logo-wrapper--26CIA\",\n\t\"author-title\": \"authorinfo__author-title--27q1D\",\n\t\"post-time\": \"authorinfo__post-time--24kfK\",\n\t\"post-label\": \"authorinfo__post-label--3c2Q6\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Main/CardList/Card/CardInfo/AuthorInfo/authorinfo.css?");
 
 /***/ }),
 

@@ -5,12 +5,14 @@
 }
 
 .logo-wrapper {
+    width: 20px;
+    height: 20px;
     margin: 0 7px 0 0;
 }
 
-.logo-svg {
-    width: 20px;
-    height: 20px;
+.logo-wrapper svg {
+    width: 100%;
+    height: 100%;
 }
 
 .author-title,

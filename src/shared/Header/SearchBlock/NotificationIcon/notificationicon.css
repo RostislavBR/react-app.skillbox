@@ -1,0 +1,36 @@
+.notifications-wrapper {
+    display: flex;
+}
+
+.notifications-wrapper:before {
+    display: flex;
+    content: '4';
+    justify-content: center;
+    align-items: center;
+    width: 12.77px;
+    height: 12.77px;
+    font-size: 9px;
+    color: var(--white);
+    background: var(--orange);
+    border-radius: 50%;
+    margin: 0 4.57px 0 0;
+}
+
+@media all and (min-width: 1024px){
+    .notifications-wrapper {
+        margin: 0 32px 0 0;
+        order: 1;
+    }
+
+    .notifications-wrapper:before {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        margin: 0 6px 0 0;
+    }
+
+    .notification-svg {
+        width: 20px;
+        height: 16px;
+    }
+}
