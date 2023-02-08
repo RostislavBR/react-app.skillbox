@@ -1,8 +1,16 @@
 const path = require('path');
 const nodeExternals = require('webpack-node-externals');
+const {DefinePlugin} = require('webpack')
 
 const NODE_ENV = process.env.NODE_ENV;
 const GLOBAL_CSS_REGEXP = /\.global\.css/;
+const IS_DEV = NODE_ENV === 'development';
+const IS_PROD = NODE_ENV === 'production';
+
+function setupDevtool() {
+    if (IS_DEV) return 'eval';
+    if (IS_PROD) return false;
+}
 
 module.exports = {
     target: 'node',
@@ -42,9 +50,20 @@ module.exports = {
                 test: GLOBAL_CSS_REGEXP,
                 use: ['css-loader'],
             },
+            {
+                test: /\.(?: ico|gif|png|jpg|jpeg|svg)$/i,
+                use: {
+                    loader: "file-loader",
+                    options: {
+                        name: '[path][name].[ext}'
+                    }
+                },
+            }
         ],
     },
     optimization: {
         minimize: false,
     },
+    devtool: setupDevtool(),
+    plugins: [new DefinePlugin({"process.env.CLIENT_ID": `'${process.env.CLIENT_ID}'`})]
 }

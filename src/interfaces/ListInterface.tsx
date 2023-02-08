@@ -1,11 +1,11 @@
 import React from "react";
 
 export interface IItem {
+    As?: 'a' | 'li' | 'button' | 'div' | 'p';
     id: string;
     text: string;
     onClick: (id: string) => void;
     className?: string
-    As?: 'a' | 'li' | 'button' | 'div' | 'p';
     href?: string;
 }
 

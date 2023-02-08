@@ -9,16 +9,13 @@
     display: flex;
 }
 
-.comment-svg {
-    margin: 0 5.84px 0 0;
-}
-
 .comment-counter {
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: 14px;
     color: var(--greyC4);
+    padding: 0 0 0 5.84px;
 }
 
 @media all and (min-width: 1024px){
